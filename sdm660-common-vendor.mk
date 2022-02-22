@@ -229,6 +229,8 @@ PRODUCT_PACKAGES += \
     libstagefright_soft_ac4dec \
     libstagefright_soft_ddpdec \
     libsurround_3mic_proc \
+    libts_detected_face_hal \
+    libts_face_beautify_hal \
     libspatialaudio \
     libswdap \
     libswgamedap \
