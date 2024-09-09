@@ -937,8 +937,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency-V2.2-java \
     vendor.qti.latencyaidlservice-V1-java \
     vendor.qti.voiceprint-V1.0-java \
-    manifest_android.hardware.drm@1.4-service.widevine \
-    vendor.qti.gnss@3.0-service
+    manifest_android.hardware.drm@1.4-service.widevine.xml \
+    vendor.qti.gnss@3.0-service.xml
 
 ifeq ($(BOARD_HAVE_QCOM_FM),true)
 PRODUCT_COPY_FILES += \
