@@ -657,8 +657,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore-V1.0-java \
     vendor.qti.hardware.sensorscalibrate-V1.0-java \
     vendor.qti.voiceprint-V1.0-java \
-    manifest_android.hardware.drm@1.4-service.widevine \
-    vendor.qti.gnss@3.0-service
+    manifest_android.hardware.drm@1.4-service.widevine.xml \
+    vendor.qti.gnss@3.0-service.xml
 
 ifeq ($(BOARD_HAVE_QCOM_FM),true)
 PRODUCT_COPY_FILES += \
