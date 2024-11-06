@@ -502,7 +502,7 @@ PRODUCT_PACKAGES += \
     dpmapi \
     qcrilhook \
     qti-telephony-common \
-    vendor.qti.gnss@3.0-service
+    vendor.qti.gnss@3.0-service.xml
 
 ifeq ($(BOARD_HAVE_QCOM_FM),true)
 PRODUCT_COPY_FILES += \
