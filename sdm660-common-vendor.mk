@@ -631,7 +631,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libaudioparsers \
-    libsdm-disp-vndapis \
     libthermalclient \
     libtime_genoff \
     CneApp \
