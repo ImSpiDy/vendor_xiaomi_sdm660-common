@@ -801,7 +801,6 @@ PRODUCT_PACKAGES += \
     thermal-engine \
     time_daemon \
     xtra-daemon \
-    xtwifi-client \
     dpmd \
     qxrsplitauxservice
 

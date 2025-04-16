@@ -11191,23 +11191,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "xtwifi-client",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/xtwifi-client"],
-			shared_libs: ["libcutils", "liblog", "libcrypto", "libz", "libsqlite", "libqmi_cci", "libqmi_common_so", "libgps.utils", "libloc_core", "libizat_core", "liblbs_core", "libavservices_minijail", "libgdtap", "liblowi_client", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "dpmd",
 	owner: "xiaomi",
 	target: {
