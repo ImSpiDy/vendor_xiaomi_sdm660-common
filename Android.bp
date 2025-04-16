@@ -3667,23 +3667,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libgdtap",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgdtap.so"],
-			shared_libs: ["libutils", "libcutils", "libgps.utils", "liblog", "libloc_core", "libizat_core", "liblbs_core", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libgnsspps",
 	owner: "xiaomi",
 	strip: {
@@ -11180,23 +11163,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/xtra-daemon"],
 			shared_libs: ["libutils", "libcutils", "libcrypto", "libssl", "libsqlite", "libgps.utils", "libloc_core", "libizat_core", "liblbs_core", "liblog", "libandroid_net", "libavservices_minijail", "libcdfw_remote_api", "libqcc_file_agent", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "xtwifi-client",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/xtwifi-client"],
-			shared_libs: ["libcutils", "liblog", "libcrypto", "libz", "libsqlite", "libqmi_cci", "libqmi_common_so", "libgps.utils", "libloc_core", "libizat_core", "liblbs_core", "libavservices_minijail", "libgdtap", "liblowi_client", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
