@@ -112,6 +112,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libsdm-disp-apis \
+    vendor.qti.diaghal-V1-ndk \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     eglSubDriverAndroid \
     libEGL_adreno \
@@ -125,6 +126,8 @@ PRODUCT_PACKAGES += \
     vulkan.adreno \
     libC2D2 \
     libCB \
+    libFlacSwDec \
+    libGPreqcancel_svc \
     libOpenCL \
     libQSEEComAPI \
     libQTEEConnector_vendor \
@@ -167,9 +170,11 @@ PRODUCT_PACKAGES += \
     libmdmdetect \
     libmdsprpc \
     libminkdescriptor \
+    libminksocket \
     libmm-hdcpmgr \
     libmmcamera_dbg \
     libmulawdec \
+    libnative-api \
     libqcbor \
     libqcci_legacy \
     libqdi \
@@ -183,6 +188,7 @@ PRODUCT_PACKAGES += \
     libqmi_encdec \
     libqmi_legacy \
     libqmiservices \
+    libqrtr \
     libqseed3 \
     libqtigef \
     librs_adreno \
@@ -276,7 +282,6 @@ PRODUCT_PACKAGES += \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
     libGPreqcancel \
-    libGPreqcancel_svc \
     libSecureUILib \
     libStDrvInt \
     libaoa \
@@ -314,7 +319,6 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_wifihal \
     liblqe \
-    libminksocket \
     libnetmgr \
     libnetmgr_common \
     libnetmgr_nr_fusion \
@@ -331,7 +335,6 @@ PRODUCT_PACKAGES += \
     libqcrildatactl \
     libqdma_file_agent \
     libqisl \
-    libqrtr \
     libqsocket \
     librcc \
     libril-qc-hal-qmi \
@@ -361,6 +364,7 @@ PRODUCT_PACKAGES += \
     libxtadapter \
     libwvdrmengine \
     qcrilHalMarshal \
+    qcril_hal_client \
     qcrild_librilutils \
     qtibus \
     qtimutex \
@@ -466,8 +470,12 @@ PRODUCT_PACKAGES += \
     liblistenjni.qti \
     liblistensoundmodel2.qti \
     liblsmclient \
+    libmmosal \
+    libmmparser_lite \
+    libsdm-disp-apis.qti \
     libvr_amb_engine \
     libvr_object_engine \
+    vendor.display.color@1.0 \
     vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
@@ -509,8 +517,6 @@ PRODUCT_PACKAGES += \
     libqmi_encdec_system \
     libqxrsplitauxservice.qti \
     libsd_sdk_display.qti \
-    libsdm-disp-apis.qti \
-    vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
     vendor.display.postproc@1.0 \
@@ -635,6 +641,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
     vendor.qti.latency@2.2 \
+    vendor.qti.latency@2.3 \
+    vendor.qti.latencyaidlservice-V1-ndk \
     vendor.qti.mstatservice@1.0 \
     CneApp \
     IWlanService \
