@@ -463,7 +463,6 @@ PRODUCT_PACKAGES += \
     libvpp_svc_skel \
     com.qualcomm.qti.ant@1.0 \
     libmmparserextractor \
-    libavenhancements \
     libbinauralrenderer_wrapper.qti \
     libhoaeffects.qti \
     libhoaeffects_csim \
