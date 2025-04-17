@@ -567,7 +567,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.embmsslaidl-V1-ndk \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
-    vendor.qti.hardware.qxr-V1-ndk_platform \
+    vendor.qti.hardware.qxr-V1-ndk \
     vendor.qti.hardware.radio.am@1.0 \
     vendor.qti.hardware.radio.ims@1.0 \
     vendor.qti.hardware.radio.ims@1.1 \
