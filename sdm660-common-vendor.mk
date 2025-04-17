@@ -168,6 +168,7 @@ PRODUCT_PACKAGES += \
     libmdsprpc \
     libminkdescriptor \
     libmm-hdcpmgr \
+    libmmcamera_dbg \
     libmulawdec \
     libqcbor \
     libqcci_legacy \
