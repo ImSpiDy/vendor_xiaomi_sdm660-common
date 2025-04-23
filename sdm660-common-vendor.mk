@@ -231,7 +231,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.scve.objecttracker@1.0 \
     vendor.qti.hardware.scve.panorama@1.0 \
-    vendor.qti.hardware.tui_comm@1.0 \
+    vendor.qti.hardware.tui_comm@1.0_vendor \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     libadm \
@@ -477,7 +477,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
-    vendor.qti.hardware.tui_comm@1.0_vendor \
+    vendor.qti.hardware.tui_comm@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
     com.qualcomm.qti.imscmservice@2.1 \
