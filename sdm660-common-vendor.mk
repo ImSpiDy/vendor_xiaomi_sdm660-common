@@ -124,10 +124,24 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vulkan.adreno \
+    libAlacSwDec \
+    libApeSwDec \
     libC2D2 \
     libCB \
     libFlacSwDec \
+    libFlacSwDec \
     libGPreqcancel_svc \
+    libOmxAacDec \
+    libOmxAlacDec \
+    libOmxAlacDecSw \
+    libOmxAmrDec \
+    libOmxAmrwbplusDec \
+    libOmxApeDec \
+    libOmxApeDecSw \
+    libOmxEvrcDec \
+    libOmxG711Dec \
+    libOmxQcelp13Dec \
+    libOmxWmaDec \
     libOpenCL \
     libQSEEComAPI \
     libQTEEConnector_vendor \
@@ -234,6 +248,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.tui_comm@1.0_vendor \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
+    libOmxDsdDec \
     libadm \
     libadpcmdec \
     libadsp_hvx_callback_skel \
