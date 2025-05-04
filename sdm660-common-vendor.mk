@@ -160,11 +160,9 @@ PRODUCT_PACKAGES += \
     libllvm-qcom \
     libmdmdetect \
     libmdsprpc \
-    libminkdescriptor \
     libmm-hdcpmgr \
     libmmcamera_dbg \
     libmulawdec \
-    libnative-api \
     libqcbor \
     libqcci_legacy \
     libqdi \
@@ -288,12 +286,13 @@ PRODUCT_PACKAGES += \
     libhdcpsrm \
     libloadalgo_stub \
     liblqe \
+    libminkdescriptor \
+    libnative-api \
     libnetmgr \
     libnetmgr_common \
     libnetmgr_nr_fusion \
     libnetmgr_rmnet_ext \
     libnlnetmgr \
-    liboemaids_vendor \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
@@ -497,7 +496,7 @@ PRODUCT_PACKAGES += \
 ifeq ($(BOARD_HAVE_QCOM_FM),true)
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.fm@1.0 \
+    vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.fm@1.0-impl
 endif
 
