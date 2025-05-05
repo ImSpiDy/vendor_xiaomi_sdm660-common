@@ -446,6 +446,7 @@ PRODUCT_PACKAGES += \
     audioflacapp \
     cdsprpcd \
     cnd \
+    cnss-daemon \
     dpmQmiMgr \
     dspservice \
     hvdcp_opti \
