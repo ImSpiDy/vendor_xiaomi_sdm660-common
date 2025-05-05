@@ -5,14 +5,13 @@
 soong_namespace {
 	imports: [
 		"device/xiaomi/sdm660-common",
-		"hardware/qcom-caf/common/libqti-perfd-client",
-		"hardware/qcom-caf/sdm660",
-		"hardware/qcom-caf/wlan",
-		"vendor/qcom/opensource/commonsys/display",
-		"vendor/qcom/opensource/commonsys-intf/display",
-		"vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um",
-		"vendor/qcom/opensource/dataservices",
-		"vendor/qcom/opensource/display",
+                "hardware/qcom/display",
+                "hardware/qcom/display/gralloc",
+                "hardware/qcom/display/libdebug",
+                "hardware/qcom/display/sde-drm",
+	        "vendor/qcom/common/vendor/gps-legacy",
+                "vendor/qcom/common/system/telephony",
+                "vendor/qcom/common/vendor/wlan-legacy",
 	],
 }
 
