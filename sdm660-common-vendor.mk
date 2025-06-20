@@ -111,7 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
-    libsdm-disp-apis \
     vendor.qti.diaghal-V1-ndk \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     eglSubDriverAndroid \
@@ -160,7 +159,6 @@ PRODUCT_PACKAGES += \
     libgcs \
     libgpudataproducer \
     libgsl \
-    libhdr_tm \
     libidl \
     libkeymasterdeviceutils \
     libkeymasterprovision \
@@ -189,7 +187,6 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiservices \
     libqrtr \
-    libqseed3 \
     libqtigef \
     librs_adreno \
     libscveCommon \
@@ -199,10 +196,6 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdedrm \
-    libsdm-color \
-    libsdm-diag \
-    libsdm-disp-vndapis \
-    libsdmextension \
     libsdsprpc \
     libsensor1 \
     libsensor_reg \
@@ -210,7 +203,6 @@ PRODUCT_PACKAGES += \
     libsysmon_cdsp_skel \
     libthermalclient \
     libtime_genoff \
-    libtinyxml2_1 \
     sensor_calibrate \
     sensors.ssc \
     libasphere \
@@ -218,10 +210,6 @@ PRODUCT_PACKAGES += \
     libqcreverb \
     libqcvirt \
     libshoebox \
-    vendor.display.color@1.0_vendor \
-    vendor.display.color@1.1_vendor \
-    vendor.display.color@1.2_vendor \
-    vendor.display.postproc@1.0_vendor \
     vendor.dolby.hardware.dms@2.0 \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.esepowermanager@1.1 \
@@ -296,7 +284,9 @@ PRODUCT_PACKAGES += \
     libconfigdb \
     libdataitems \
     libdisp-aba \
+    libdisplayqos \
     libdlbdsservice \
+    libdpps \
     libdrmfs \
     libdrmtime \
     libdsi_netctrl \
@@ -304,6 +294,7 @@ PRODUCT_PACKAGES += \
     libgarden_haltests_e2e \
     libgnsspps \
     libhdcpsrm \
+    libhdr_tm \
     libizat_client_api \
     libizat_core \
     liblbs_core \
@@ -334,6 +325,7 @@ PRODUCT_PACKAGES += \
     libqcrildatactl \
     libqdma_file_agent \
     libqisl \
+    libqseed3 \
     libqsocket \
     librcc \
     libril-qc-hal-qmi \
@@ -344,6 +336,11 @@ PRODUCT_PACKAGES += \
     librilqmiservices \
     librmp \
     librpmb \
+    libsdm-color \
+    libsdm-colormgr-algo \
+    libsdm-diag \
+    libsdm-disp-vndapis \
+    libsdmextension \
     libsecureui \
     libsecureui_svcsock \
     libsettings \
@@ -354,6 +351,7 @@ PRODUCT_PACKAGES += \
     libsubsystem_control \
     libsynergy_loc_api \
     libsystem_health_mon \
+    libtinyxml2_1 \
     libtrustedapploader \
     libtzdrmgenprov \
     libwms \
@@ -367,6 +365,13 @@ PRODUCT_PACKAGES += \
     qcrild_librilutils \
     qtibus \
     qtimutex \
+    vendor.display.color@1.0_vendor \
+    vendor.display.color@1.1_vendor \
+    vendor.display.color@1.2_vendor \
+    vendor.display.color@1.3 \
+    vendor.display.color@1.4 \
+    vendor.display.color@1.5 \
+    vendor.display.postproc@1.0_vendor \
     vendor.dolby.hardware.dms@2.0-impl \
     vendor.qti.data.factory@2.0_vendor \
     vendor.qti.data.factory@2.1_vendor \
@@ -787,7 +792,6 @@ PRODUCT_PACKAGES += \
     loc_launcher \
     lowi-server \
     mlid \
-    mm-pp-dpps \
     msm_irqbalance \
     netmgrd \
     pd-mapper \
@@ -795,6 +799,7 @@ PRODUCT_PACKAGES += \
     pm-service \
     port-bridge \
     power_off_alarm \
+    ppd \
     qcc-trd \
     qrtr-cfg \
     qrtr-lookup \
