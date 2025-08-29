@@ -13,4 +13,3 @@ service qccvndhalservice /vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-servic
   class hal
   user system
   group system
-  disabled

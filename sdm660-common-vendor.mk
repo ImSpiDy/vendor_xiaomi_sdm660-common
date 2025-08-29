@@ -292,6 +292,7 @@ PRODUCT_PACKAGES += \
     libdsi_netctrl \
     libgarden \
     libgarden_haltests_e2e \
+    libgdtap \
     libgnsspps \
     libhdcpsrm \
     libhdr_tm \
@@ -813,6 +814,7 @@ PRODUCT_PACKAGES += \
     thermal-engine \
     time_daemon \
     xtra-daemon \
+    xtwifi-client \
     dpmd \
     qxrsplitauxservice
 
