@@ -6,27 +6,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/sdm660-common
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/cdma_call_conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cdma_call_conf.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/init/sxrauxd_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/sxrauxd_ext.rc \
     vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/permissions/datachannellib.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/datachannellib.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/permissions/embms-noship_product_privapp_permissions_qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/embms-noship_product_privapp_permissions_qti.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsservice.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/permissions/vendor.qti.imsdcservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.imsdcservice.xml \
     vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/seccomp_policy/sxraux-arm.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/sxraux-arm.policy \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/spn-conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/spn-conf.xml \
-    vendor/xiaomi/sdm660-common/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/xiaomi/sdm660-common/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/xiaomi/sdm660-common/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
     vendor/xiaomi/sdm660-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
@@ -110,7 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
-    vendor.qti.diaghal-V1-ndk \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     eglSubDriverAndroid \
     libEGL_adreno \
@@ -121,10 +102,23 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vulkan.adreno \
+    libAlacSwDec \
+    libApeSwDec \
     libC2D2 \
     libCB \
     libFlacSwDec \
     libGPreqcancel_svc \
+    libOmxAacDec \
+    libOmxAlacDec \
+    libOmxAlacDecSw \
+    libOmxAmrDec \
+    libOmxAmrwbplusDec \
+    libOmxApeDec \
+    libOmxApeDecSw \
+    libOmxEvrcDec \
+    libOmxG711Dec \
+    libOmxQcelp13Dec \
+    libOmxWmaDec \
     libOpenCL \
     libQSEEComAPI \
     libQTEEConnector_vendor \
@@ -218,6 +212,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.tui_comm@1.0_vendor \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
+    libOmxDsdDec \
     libadm \
     libadpcmdec \
     libadsp_hvx_callback_skel \
@@ -463,15 +458,12 @@ PRODUCT_PACKAGES += \
     libscveT2T_skel \
     libvpp_svc_skel \
     com.qualcomm.qti.ant@1.0 \
-    libmmparserextractor \
     libbinauralrenderer_wrapper.qti \
     libhoaeffects.qti \
     libhoaeffects_csim \
     liblistenjni.qti \
     liblistensoundmodel2.qti \
     liblsmclient \
-    libmmosal \
-    libmmparser_lite \
     libsdm-disp-apis.qti \
     libvr_amb_engine \
     libvr_object_engine \
@@ -480,282 +472,21 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
-    com.qualcomm.qti.dpm.api@1.0 \
-    com.qualcomm.qti.imscmservice@2.0 \
-    com.qualcomm.qti.imscmservice@2.1 \
-    com.qualcomm.qti.imscmservice@2.2 \
-    com.qualcomm.qti.uceservice@2.0 \
-    com.qualcomm.qti.uceservice@2.1 \
-    com.qualcomm.qti.uceservice@2.2 \
-    com.qualcomm.qti.uceservice@2.3 \
-    com.quicinc.cne.api@1.0 \
-    com.quicinc.cne.api@1.1 \
-    com.quicinc.cne.constants@1.0 \
-    com.quicinc.cne.constants@2.0 \
-    com.quicinc.cne.constants@2.1 \
-    com.quicinc.cne.server@1.0 \
-    com.quicinc.cne.server@2.0 \
-    com.quicinc.cne.server@2.1 \
-    com.quicinc.cne.server@2.2 \
-    lib-imsvideocodec \
-    lib-imsvt \
-    lib-imsvtextutils \
-    lib-imsvtutils \
-    libdiag_system.qti \
-    libdiag_system \
-    libdpmctmgr \
-    libdpmfdmgr \
-    libdpmframework \
-    libdpmtcm \
-    libembmsmmosal \
-    libembmsmmparser_lite \
-    libembmstinyxml \
-    libimscamera_jni \
-    libimsmedia_jni \
-    libmwqemiptablemgr \
-    libqmi_cci_system \
-    libqmi_encdec_system \
     libqxrsplitauxservice.qti \
     libsd_sdk_display.qti \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
     vendor.display.postproc@1.0 \
-    vendor.qti.ImsRtpService-V1-ndk \
-    vendor.qti.data.factory@1.0 \
-    vendor.qti.data.factory@2.0 \
-    vendor.qti.data.factory@2.1 \
-    vendor.qti.data.factory@2.2 \
-    vendor.qti.data.factory@2.3 \
-    vendor.qti.data.factory@2.4 \
-    vendor.qti.data.factory@2.5 \
-    vendor.qti.data.factory@2.6 \
-    vendor.qti.data.factory@2.7 \
-    vendor.qti.data.factory@2.8 \
-    vendor.qti.data.factoryservice-V1-ndk \
-    vendor.qti.data.mwqem@1.0 \
-    vendor.qti.data.mwqemaidlservice-V1-ndk \
-    vendor.qti.data.slm@1.0 \
-    vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.alarm@1.0 \
-    vendor.qti.hardware.cacertaidlservice-V1-ndk \
-    vendor.qti.hardware.data.cne.internal.api@1.0 \
-    vendor.qti.hardware.data.cne.internal.constants@1.0 \
-    vendor.qti.hardware.data.cne.internal.server@1.0 \
-    vendor.qti.hardware.data.cne.internal.server@1.1 \
-    vendor.qti.hardware.data.cne.internal.server@1.2 \
-    vendor.qti.hardware.data.cne.internal.server@1.3 \
-    vendor.qti.hardware.data.cneaidlservice.internal.api-V1-ndk \
-    vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-ndk \
-    vendor.qti.hardware.data.cneaidlservice.internal.server-V1-ndk \
-    vendor.qti.hardware.data.connection@1.0 \
-    vendor.qti.hardware.data.connection@1.1 \
-    vendor.qti.hardware.data.connectionfactory-V1-ndk \
-    vendor.qti.hardware.data.dataactivity-V1-ndk \
-    vendor.qti.hardware.data.dynamicdds@1.0 \
-    vendor.qti.hardware.data.dynamicdds@1.1 \
-    vendor.qti.hardware.data.dynamicddsaidlservice-V1-ndk \
-    vendor.qti.hardware.data.flow@1.0 \
-    vendor.qti.hardware.data.flow@1.1 \
-    vendor.qti.hardware.data.flowaidlservice-V1-ndk \
-    vendor.qti.hardware.data.iwlan@1.0 \
-    vendor.qti.hardware.data.iwlan@1.1 \
-    vendor.qti.hardware.data.iwlandata-V1-ndk \
-    vendor.qti.hardware.data.ka-V1-ndk \
-    vendor.qti.hardware.data.latency@1.0 \
-    vendor.qti.hardware.data.lce@1.0 \
-    vendor.qti.hardware.data.lceaidlservice-V1-ndk \
-    vendor.qti.hardware.data.qmi@1.0 \
-    vendor.qti.hardware.data.qmiaidlservice-V1-ndk \
-    vendor.qti.hardware.dpmaidlservice-V1-ndk \
-    vendor.qti.hardware.dpmservice@1.0 \
-    vendor.qti.hardware.dpmservice@1.1 \
-    vendor.qti.hardware.embmssl@1.0 \
-    vendor.qti.hardware.embmssl@1.1 \
-    vendor.qti.hardware.embmsslaidl-V1-ndk \
-    vendor.qti.hardware.mwqemadapter@1.0 \
-    vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
     vendor.qti.hardware.qxr-V1-ndk \
-    vendor.qti.hardware.radio.am@1.0 \
-    vendor.qti.hardware.radio.ims@1.0 \
-    vendor.qti.hardware.radio.ims@1.1 \
-    vendor.qti.hardware.radio.ims@1.2 \
-    vendor.qti.hardware.radio.ims@1.3 \
-    vendor.qti.hardware.radio.ims@1.4 \
-    vendor.qti.hardware.radio.ims@1.5 \
-    vendor.qti.hardware.radio.ims@1.6 \
-    vendor.qti.hardware.radio.ims@1.7 \
-    vendor.qti.hardware.radio.ims@1.8 \
-    vendor.qti.hardware.radio.ims@1.9 \
-    vendor.qti.hardware.radio.internal.deviceinfo@1.0 \
-    vendor.qti.hardware.radio.lpa@1.0 \
-    vendor.qti.hardware.radio.lpa@1.1 \
-    vendor.qti.hardware.radio.lpa@1.2 \
-    vendor.qti.hardware.radio.lpa@1.3 \
-    vendor.qti.hardware.radio.qcrilhook@1.0 \
-    vendor.qti.hardware.radio.qtiradio@1.0 \
-    vendor.qti.hardware.radio.qtiradio@2.0 \
-    vendor.qti.hardware.radio.qtiradio@2.1 \
-    vendor.qti.hardware.radio.qtiradio@2.2 \
-    vendor.qti.hardware.radio.qtiradio@2.3 \
-    vendor.qti.hardware.radio.qtiradio@2.4 \
-    vendor.qti.hardware.radio.qtiradio@2.5 \
-    vendor.qti.hardware.radio.qtiradio@2.6 \
-    vendor.qti.hardware.radio.qtiradio@2.7 \
-    vendor.qti.hardware.radio.uim@1.0 \
-    vendor.qti.hardware.radio.uim@1.1 \
-    vendor.qti.hardware.radio.uim@1.2 \
-    vendor.qti.hardware.radio.uim_remote_client@1.0 \
-    vendor.qti.hardware.radio.uim_remote_client@1.1 \
-    vendor.qti.hardware.radio.uim_remote_client@1.2 \
-    vendor.qti.hardware.radio.uim_remote_server@1.0 \
-    vendor.qti.hardware.slmadapter@1.0 \
-    vendor.qti.ims.callcapability@1.0 \
-    vendor.qti.ims.callcapabilityaidlservice-V1-ndk \
-    vendor.qti.ims.callinfo@1.0 \
-    vendor.qti.ims.configaidlservice-V1-ndk \
-    vendor.qti.ims.configservice@1.0 \
-    vendor.qti.ims.configservice@1.1 \
-    vendor.qti.ims.connection@1.0 \
-    vendor.qti.ims.connectionaidlservice-V1-ndk \
-    vendor.qti.ims.datachannelservice-V1-ndk \
-    vendor.qti.ims.factory@1.0 \
-    vendor.qti.ims.factory@1.1 \
-    vendor.qti.ims.factory@2.0 \
-    vendor.qti.ims.factory@2.1 \
-    vendor.qti.ims.factory@2.2 \
-    vendor.qti.ims.factoryaidlservice-V1-ndk \
-    vendor.qti.ims.rcsconfig@1.0 \
-    vendor.qti.ims.rcsconfig@1.1 \
-    vendor.qti.ims.rcsconfig@2.0 \
-    vendor.qti.ims.rcsconfig@2.1 \
-    vendor.qti.ims.rcssip@1.0 \
-    vendor.qti.ims.rcssip@1.1 \
-    vendor.qti.ims.rcssip@1.2 \
-    vendor.qti.ims.rcssipaidlservice-V1-ndk \
-    vendor.qti.ims.rcsuce@1.0 \
-    vendor.qti.ims.rcsuce@1.1 \
-    vendor.qti.ims.rcsuce@1.2 \
-    vendor.qti.ims.rcsuceaidlservice-V1-ndk \
-    vendor.qti.imsrtpservice@3.0 \
-    vendor.qti.imsrtpservice@3.1 \
-    vendor.qti.latency@2.0 \
-    vendor.qti.latency@2.1 \
-    vendor.qti.latency@2.2 \
-    vendor.qti.latency@2.3 \
-    vendor.qti.latencyaidlservice-V1-ndk \
-    vendor.qti.mstatservice@1.0 \
     CneApp \
     IWlanService \
     TimeService \
     PowerOffAlarm \
-    DeviceInfo \
-    DynamicDDSService \
-    QtiTelephonyService \
-    uceShimService \
-    dpmserviceapp \
-    ims \
-    tcmclient \
     audiosphere \
-    com.qti.dpmframework \
-    com.qualcomm.qti.imscmservice-V2.0-java \
-    com.qualcomm.qti.imscmservice-V2.1-java \
-    com.qualcomm.qti.imscmservice-V2.2-java \
-    com.qualcomm.qti.uceservice-V2.0-java \
-    com.qualcomm.qti.uceservice-V2.1-java \
-    com.qualcomm.qti.uceservice-V2.2-java \
-    com.qualcomm.qti.uceservice-V2.3-java \
-    com.quicinc.cne.api-V1.0-java \
-    com.quicinc.cne.api-V1.1-java \
-    com.quicinc.cne.constants-V1.0-java \
-    com.quicinc.cne.constants-V2.0-java \
-    com.quicinc.cne.constants-V2.1-java \
-    datachannellib \
-    dpmapi \
-    qcrilhook \
-    qti-telephony-common \
-    vendor.qti.data.factory-V1.0-java \
-    vendor.qti.data.factory-V2.0-java \
-    vendor.qti.data.factory-V2.1-java \
-    vendor.qti.data.factory-V2.2-java \
-    vendor.qti.data.factory-V2.3-java \
-    vendor.qti.data.factory-V2.4-java \
-    vendor.qti.data.factory-V2.5-java \
-    vendor.qti.data.factory-V2.6-java \
-    vendor.qti.data.factory-V2.7-java \
-    vendor.qti.data.factory-V2.8-java \
-    vendor.qti.data.factoryservice-V1-java \
-    vendor.qti.data.mwqem-V1.0-java \
-    vendor.qti.data.mwqemaidlservice-V1-java \
-    vendor.qti.data.slm-V1.0-java \
     vendor.qti.hardware.alarm-V1.0-java \
-    vendor.qti.hardware.cacertaidlservice-V1-java \
     vendor.qti.hardware.capabilityconfigstore-V1.0-java \
-    vendor.qti.hardware.data.cne.internal.api-V1.0-java \
-    vendor.qti.hardware.data.cne.internal.constants-V1.0-java \
-    vendor.qti.hardware.data.cne.internal.server-V1.0-java \
-    vendor.qti.hardware.data.cne.internal.server-V1.1-java \
-    vendor.qti.hardware.data.cne.internal.server-V1.2-java \
-    vendor.qti.hardware.data.cne.internal.server-V1.3-java \
-    vendor.qti.hardware.data.cneaidlservice.internal.api-V1-java \
-    vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-java \
-    vendor.qti.hardware.data.cneaidlservice.internal.server-V1-java \
-    vendor.qti.hardware.data.connection-V1.0-java \
-    vendor.qti.hardware.data.connection-V1.1-java \
-    vendor.qti.hardware.data.connectionfactory-V1-java \
-    vendor.qti.hardware.data.dataactivity-V1-java \
-    vendor.qti.hardware.data.dynamicdds-V1.0-java \
-    vendor.qti.hardware.data.dynamicdds-V1.1-java \
-    vendor.qti.hardware.data.dynamicddsaidlservice-V1-java \
-    vendor.qti.hardware.data.flow-V1.0-java \
-    vendor.qti.hardware.data.flow-V1.1-java \
-    vendor.qti.hardware.data.flowaidlservice-V1-java \
-    vendor.qti.hardware.data.iwlan-V1.0-java \
-    vendor.qti.hardware.data.iwlan-V1.1-java \
-    vendor.qti.hardware.data.iwlandata-V1-java \
-    vendor.qti.hardware.data.ka-V1-java \
-    vendor.qti.hardware.data.latency-V1.0-java \
-    vendor.qti.hardware.data.lce-V1.0-java \
-    vendor.qti.hardware.data.lceaidlservice-V1-java \
-    vendor.qti.hardware.data.qmi-V1.0-java \
-    vendor.qti.hardware.data.qmiaidlservice-V1-java \
-    vendor.qti.hardware.dpmaidlservice-V1-java \
-    vendor.qti.hardware.dpmservice-V1.0-java \
-    vendor.qti.hardware.dpmservice-V1.1-java \
-    vendor.qti.hardware.mwqemadapter-V1.0-java \
-    vendor.qti.hardware.mwqemadapteraidlservice-V1-java \
     vendor.qti.hardware.sensorscalibrate-V1.0-java \
-    vendor.qti.hardware.slmadapter-V1.0-java \
-    vendor.qti.ims.callcapability-V1.0-java \
-    vendor.qti.ims.callcapabilityaidlservice-V1-java \
-    vendor.qti.ims.callinfo-V1.0-java \
-    vendor.qti.ims.configaidlservice-V1-java \
-    vendor.qti.ims.configservice-V1.0-java \
-    vendor.qti.ims.configservice-V1.1-java \
-    vendor.qti.ims.connection-V1.0-java \
-    vendor.qti.ims.connectionaidlservice-V1-java \
-    vendor.qti.ims.datachannelservice-V1-java \
-    vendor.qti.ims.factory-V1.0-java \
-    vendor.qti.ims.factory-V1.1-java \
-    vendor.qti.ims.factory-V2.0-java \
-    vendor.qti.ims.factory-V2.1-java \
-    vendor.qti.ims.factory-V2.2-java \
-    vendor.qti.ims.factoryaidlservice-V1-java \
-    vendor.qti.ims.rcsconfig-V1.0-java \
-    vendor.qti.ims.rcsconfig-V1.1-java \
-    vendor.qti.ims.rcsconfig-V2.0-java \
-    vendor.qti.ims.rcsconfig-V2.1-java \
-    vendor.qti.ims.rcssip-V1.0-java \
-    vendor.qti.ims.rcssip-V1.1-java \
-    vendor.qti.ims.rcssip-V1.2-java \
-    vendor.qti.ims.rcssipaidlservice-V1-java \
-    vendor.qti.ims.rcsuce-V1.0-java \
-    vendor.qti.ims.rcsuce-V1.1-java \
-    vendor.qti.ims.rcsuce-V1.2-java \
-    vendor.qti.ims.rcsuceaidlservice-V1-java \
-    vendor.qti.latency-V2.0-java \
-    vendor.qti.latency-V2.1-java \
-    vendor.qti.latency-V2.2-java \
-    vendor.qti.latencyaidlservice-V1-java \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     vendor.qti.gnss@4.3-service.xml \
     adpl \
@@ -788,7 +519,6 @@ PRODUCT_PACKAGES += \
     loc_launcher \
     lowi-server \
     mlid \
-    msm_irqbalance \
     netmgrd \
     pd-mapper \
     pm-proxy \
@@ -810,12 +540,9 @@ PRODUCT_PACKAGES += \
     time_daemon \
     xtra-daemon \
     xtwifi-client \
-    dpmd \
     qxrsplitauxservice
 
 PRODUCT_PACKAGES += \
-    libimscamera_jni_libimscamera_jni_symlink64 \
-    libimsmedia_jni_libimsmedia_jni_symlink64 \
     libEGL_adreno_libEGL_adreno_symlink32 \
     libGLESv2_adreno_libGLESv2_adreno_symlink32 \
     libq3dtools_adreno_libq3dtools_adreno_symlink32 \
