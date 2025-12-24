@@ -829,10 +829,3 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.fm@1.0-impl
 endif
-
-ifeq ($(BOARD_HAVE_IR),true)
-
-PRODUCT_PACKAGES += \
-    consumerir.lirc.sdm660 \
-    consumerir.spi.sdm660
-endif
