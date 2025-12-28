@@ -192,7 +192,6 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation_stub \
     libscveObjectTracker \
     libscveObjectTracker_stub \
-    libsdedrm \
     libsdsprpc \
     libsensor1 \
     libsensor_reg \
@@ -282,7 +281,6 @@ PRODUCT_PACKAGES += \
     libdataitems \
     libdisplayqos \
     libdlbdsservice \
-    libdpps \
     libdrmfs \
     libdrmtime \
     libdsi_netctrl \
@@ -333,6 +331,7 @@ PRODUCT_PACKAGES += \
     librilqmiservices \
     librmp \
     librpmb \
+    libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-diag \

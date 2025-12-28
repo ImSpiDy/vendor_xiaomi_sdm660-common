@@ -1765,28 +1765,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsdedrm",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsdedrm.so"],
-			shared_libs: ["libdrm", "libdrmutils", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdedrm.so"],
-			shared_libs: ["libdrm", "libdrmutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libsdsprpc",
 	owner: "xiaomi",
 	strip: {
@@ -3424,23 +3402,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libdpps",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libdpps.so"],
-			shared_libs: ["libcutils", "libdisp-aba", "libqdutils", "libutils", "liblog", "libbinder", "libdrm", "libtinyxml2", "libhidlbase", "android.frameworks.sensorservice@1.0", "libtinyxml", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libdrmfs",
 	owner: "xiaomi",
 	strip: {
@@ -4291,6 +4252,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libsdedrm",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsdedrm.so"],
+			shared_libs: ["libdrm", "libdrmutils", "libdisplaydebug", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libsdm-color",
 	owner: "xiaomi",
 	strip: {
@@ -4337,6 +4315,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -4367,7 +4346,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsdmextension.so"],
-			shared_libs: ["libsdmutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libdisplaydebug", "libsdmutils", "libdisplayqos", "libsdm-color", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
