@@ -77,7 +77,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm660-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/xiaomi/sdm660-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/xiaomi/sdm660-common/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
-    vendor/xiaomi/sdm660-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/sdm660-common/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/xiaomi/sdm660-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/xiaomi/sdm660-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
@@ -281,7 +280,6 @@ PRODUCT_PACKAGES += \
     libcneqmiutils \
     libconfigdb \
     libdataitems \
-    libdisp-aba \
     libdisplayqos \
     libdlbdsservice \
     libdpps \
@@ -364,13 +362,6 @@ PRODUCT_PACKAGES += \
     qcrild_librilutils \
     qtibus \
     qtimutex \
-    vendor.display.color@1.0_vendor \
-    vendor.display.color@1.1_vendor \
-    vendor.display.color@1.2_vendor \
-    vendor.display.color@1.3 \
-    vendor.display.color@1.4 \
-    vendor.display.color@1.5 \
-    vendor.display.postproc@1.0_vendor \
     vendor.dolby.hardware.dms@2.0-impl \
     vendor.qti.data.factory@2.0_vendor \
     vendor.qti.data.factory@2.1_vendor \
@@ -474,10 +465,8 @@ PRODUCT_PACKAGES += \
     liblsmclient \
     libmmosal \
     libmmparser_lite \
-    libsdm-disp-apis.qti \
     libvr_amb_engine \
     libvr_object_engine \
-    vendor.display.color@1.0 \
     vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
@@ -518,10 +507,6 @@ PRODUCT_PACKAGES += \
     libqmi_cci_system \
     libqmi_encdec_system \
     libqxrsplitauxservice.qti \
-    libsd_sdk_display.qti \
-    vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
-    vendor.display.postproc@1.0 \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.data.factory@1.0 \
     vendor.qti.data.factory@2.0 \
@@ -773,7 +758,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.4-service.widevine \
     qcrild \
-    vendor.display.color@1.0-service \
     vendor.dolby.hardware.dms@2.0-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
@@ -797,7 +781,6 @@ PRODUCT_PACKAGES += \
     pm-service \
     port-bridge \
     power_off_alarm \
-    ppd \
     qcc-trd \
     qrtr-cfg \
     qrtr-lookup \
