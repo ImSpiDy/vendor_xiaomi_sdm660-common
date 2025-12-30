@@ -208,6 +208,7 @@ PRODUCT_PACKAGES += \
     libshoebox \
     vendor.dolby.hardware.dms@2.0 \
     vendor.qti.hardware.dsp@1.0 \
+    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.mwqemadapter@1.0_vendor \
     vendor.qti.hardware.qseecom@1.0_vendor \
     vendor.qti.hardware.qteeconnector@1.0 \
@@ -243,12 +244,15 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.3_vendor \
     android.hardware.bluetooth@1.0-impl-qti \
     com.dsi.ant@1.0-impl \
+    consumerir.lirc.sdm660 \
+    consumerir.spi.sdm660 \
     vendor.qti.gnss@4.3-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
+    vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.qccvndhal@1.0-impl \
     lib-imscmservice \
     lib-imsdpl \
@@ -805,17 +809,3 @@ PRODUCT_PACKAGES += \
     libEGL_adreno_libEGL_adreno_symlink64 \
     libGLESv2_adreno_libGLESv2_adreno_symlink64 \
     libq3dtools_adreno_libq3dtools_adreno_symlink64
-
-ifeq ($(BOARD_HAVE_QCOM_FM),true)
-
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.fm@1.0 \
-    vendor.qti.hardware.fm@1.0-impl
-endif
-
-ifeq ($(BOARD_HAVE_IR),true)
-
-PRODUCT_PACKAGES += \
-    consumerir.lirc.sdm660 \
-    consumerir.spi.sdm660
-endif
