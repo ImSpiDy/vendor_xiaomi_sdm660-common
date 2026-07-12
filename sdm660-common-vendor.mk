@@ -208,7 +208,7 @@ PRODUCT_PACKAGES += \
     libshoebox \
     vendor.dolby.hardware.dms@2.0 \
     vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.fm@1.0 \
+    vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.mwqemadapter@1.0_vendor \
     vendor.qti.hardware.qseecom@1.0_vendor \
     vendor.qti.hardware.qteeconnector@1.0 \
