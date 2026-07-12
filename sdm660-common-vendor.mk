@@ -458,7 +458,9 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libvpp_svc_skel_so \
     com.qualcomm.qti.ant@1.0 \
     libmmparserextractor \
+    fm_helium \
     libbinauralrenderer_wrapper.qti \
+    libfm-hci \
     libhoaeffects.qti \
     libhoaeffects_csim \
     liblistenjni.qti \
@@ -469,6 +471,7 @@ PRODUCT_PACKAGES += \
     libvr_amb_engine \
     libvr_object_engine \
     vendor.qti.hardware.ListenSoundModel@1.0 \
+    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
