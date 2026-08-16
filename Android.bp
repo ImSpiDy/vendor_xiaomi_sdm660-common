@@ -4987,39 +4987,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libOmxVideoDSMode",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxVideoDSMode.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libmmosal",
-                "libutils",
-                "libOmxCore",
-                "libwfdcommonutils_proprietary",
-                "libwfdmmservice_proprietary",
-                "libbinder",
-                "libwfdutils_proprietary",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libadm",
     owner: "xiaomi",
     strip: {

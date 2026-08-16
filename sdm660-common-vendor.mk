@@ -225,7 +225,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
-    libOmxVideoDSMode \
     libadm \
     libadpcmdec \
     libadsp_hvx_callback_skel \
