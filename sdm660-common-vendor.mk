@@ -757,6 +757,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency-V2.1-java \
     vendor.qti.latency-V2.2-java \
     vendor.qti.latencyaidlservice-V1-java \
+    c2_manifest_vendor.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     vendor.qti.gnss@4.3-service.xml \
     adpl \
